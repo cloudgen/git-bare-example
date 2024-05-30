@@ -42,4 +42,3 @@ if [ "$EUID" -ne 0 ]; then
 fi
 create_user
 create_systemd
-
