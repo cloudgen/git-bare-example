@@ -45,7 +45,8 @@ create_deploy () {
   cat > $ORIGIN <<EOT
 #!/bin/sh
 sudo cp -rP $WORK_TREE /home/ex-user
-
+sudo systemctl restart example
+echo "Service [example] restarted"
 EOT
   
   chmod +x $ORIGIN
