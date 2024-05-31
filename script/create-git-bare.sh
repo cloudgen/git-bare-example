@@ -57,7 +57,7 @@ create_sudoer () {
   ORIGIN=/tmp/sudoer-$$
   TARGET=/etc/sudoers.d/100-git
   cat > $ORIGIN <<EOT
-git ALL=(ALL) NOPASSWD: /usr/local/bin/
+git ALL=(ALL) NOPASSWD: /usr/local/bin/deploy
 
 EOT
 
